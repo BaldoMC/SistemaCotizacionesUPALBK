@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Lab</title>
+    <title>@ViewData["Title"] - Cotizaciones UPA</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,13 +26,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Lab</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Cotizaciones UPA</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    
+                    <li><a asp-area="" asp-controller="Persona" asp-action="">Clientes</a></li>
+                    <li><a asp-area="" asp-controller="Cotizacion" asp-action="">Cotizaciones</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +44,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - Lab</p>
+            <p>&copy; 2017 - Cotizaciones</p>
         </footer>
     </div>
 
