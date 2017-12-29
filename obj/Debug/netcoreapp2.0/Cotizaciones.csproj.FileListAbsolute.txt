@@ -18,13 +18,3 @@ c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
-c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.deps.json
-c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.json
-c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.dev.json
-c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.dll
-c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.pdb
-c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.csproj.CoreCompileInputs.cache
-c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfoInputs.cache
-c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
-c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
-c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
