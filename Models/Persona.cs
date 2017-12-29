@@ -3,7 +3,7 @@ using System;
 /// <summary>
 /// Archivo donde se definen las clases del Dominio del problema.
 /// </summary>
-namespace Cotizaciones.Models
+namespace Lab.Models
 {
 
     /// <summary>
