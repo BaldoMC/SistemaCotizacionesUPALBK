@@ -3,7 +3,15 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+<<<<<<< HEAD
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">c:\GitHub\SistemaCotizacionesUPALBK\obj\project.assets.json</ProjectAssetsFile>
+=======
+<<<<<<< HEAD
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\project.assets.json</ProjectAssetsFile>
+=======
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\project.assets.json</ProjectAssetsFile>
+>>>>>>> 0ca8ffd050ebbcec561a5f623b7c153a1d249e4d
+>>>>>>> 00978e7ec5b1e15b2191e72807c66307d4954baa
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\bmora\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>

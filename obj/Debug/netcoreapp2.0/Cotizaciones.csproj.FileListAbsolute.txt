@@ -8,6 +8,18 @@ D:\Talleres\Cotizaciones\bin\Debug\netcoreapp2.0\Cotizaciones.dll
 D:\Talleres\Cotizaciones\bin\Debug\netcoreapp2.0\Cotizaciones.pdb
 D:\Talleres\Cotizaciones\obj\Debug\netcoreapp2.0\Cotizaciones.dll
 D:\Talleres\Cotizaciones\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
+<<<<<<< HEAD
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.deps.json
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.json
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.dev.json
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.dll
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.pdb
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.csproj.CoreCompileInputs.cache
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfoInputs.cache
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
+c:\Users\kevxa\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
+=======
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.deps.json
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.json
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.dev.json
@@ -18,6 +30,7 @@ c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
 c:\Users\bmora\Documents\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
+<<<<<<< HEAD
 c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.deps.json
 c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.json
 c:\GitHub\SistemaCotizacionesUPALBK\bin\Debug\netcoreapp2.0\Cotizaciones.runtimeconfig.dev.json
@@ -28,3 +41,6 @@ c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.Assembl
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
+=======
+>>>>>>> 0ca8ffd050ebbcec561a5f623b7c153a1d249e4d
+>>>>>>> 00978e7ec5b1e15b2191e72807c66307d4954baa

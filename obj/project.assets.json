@@ -13131,11 +13131,27 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "c:\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "c:\\Users\\kevxa\\Documents\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+      "projectName": "Cotizaciones",
+      "projectPath": "c:\\Users\\kevxa\\Documents\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+      "packagesPath": "C:\\Users\\kevxa\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\kevxa\\Documents\\GitHub\\SistemaCotizacionesUPALBK\\obj\\",
+=======
+      "projectUniqueName": "c:\\Users\\bmora\\Documents\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+>>>>>>> 00978e7ec5b1e15b2191e72807c66307d4954baa
       "projectName": "Cotizaciones",
       "projectPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
       "packagesPath": "C:\\Users\\bmora\\.nuget\\packages\\",
+<<<<<<< HEAD
       "outputPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\obj\\",
+=======
+      "outputPath": "c:\\Users\\bmora\\Documents\\GitHub\\SistemaCotizacionesUPALBK\\obj\\",
+>>>>>>> 0ca8ffd050ebbcec561a5f623b7c153a1d249e4d
+>>>>>>> 00978e7ec5b1e15b2191e72807c66307d4954baa
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
