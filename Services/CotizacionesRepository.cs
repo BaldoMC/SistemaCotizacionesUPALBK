@@ -14,10 +14,10 @@ namespace Cotizaciones.Services{
     /// </summary>
 
     public class CotizacionesRepository{
-        public List<Cotizacion> ObtenerTodos(int rutPer){
+        public List<Cotizacion> ObtenerCotizaciones(int rutPer){
             using (var context = new CotizacionesContext()){
                 var cotizaciones = context.Cotizaciones
-                .Where (b => b.PersonaRut.Equals(rutPer))
+                .Where (b => b.PersonaRut==rutPer)
                 .ToList();
 
                 return cotizaciones;

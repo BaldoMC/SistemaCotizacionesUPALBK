@@ -1,0 +1,82 @@
+﻿
+@model IEnumerable<Cotizaciones.Models.Cotizacion>
+@{
+    ViewData["Title"] = "Listado";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombreCliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombreProductor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.fechaCreacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.fechaValidez)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.costo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.total)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.estado)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.persona)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreProductor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaValidez)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.persona.Rut)
+            </td>
+       
+        </tr>
+}
+    </tbody>
+</table>

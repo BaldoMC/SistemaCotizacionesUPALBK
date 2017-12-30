@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Cotizaciones.Models;
+using System;
+using System.Data;
+using System.Linq;
 
 namespace Cotizaciones.Data{
     public class CotizacionesContext : DbContext
@@ -10,6 +13,7 @@ namespace Cotizaciones.Data{
 
         public CotizacionesContext()
         {
+        
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
