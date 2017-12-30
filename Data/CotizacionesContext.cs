@@ -11,11 +11,6 @@ namespace Cotizaciones.Data{
         {
         }
 
-        public CotizacionesContext()
-        {
-        
-        }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Utilizacion de SQLite como backend

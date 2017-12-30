@@ -14,9 +14,14 @@ namespace Cotizaciones.Services{
     /// </summary>
 
     public class CotizacionesRepository{
+        private readonly CotizacionesContext _context;
+
+        public CotizacionesRepository(CotizacionesContext context){
+            _context = context;
+        }
         public List<Cotizacion> ObtenerCotizaciones(int rutPer){
-            using (var context = new CotizacionesContext()){
-                var cotizaciones = context.Cotizaciones
+            using (_context){
+                var cotizaciones = _context.Cotizaciones
                 .Where (b => b.PersonaRut==rutPer)
                 .ToList();
 

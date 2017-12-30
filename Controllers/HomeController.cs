@@ -11,12 +11,7 @@ namespace Cotizaciones.Controllers
 {
     public class HomeController : Controller
     {
-        private CotizacionesRepository _repo;
 
-        public HomeController()
-        {
-             _repo = new CotizacionesRepository();
-        }
         public IActionResult Index()
         {
             return View();
@@ -41,12 +36,5 @@ namespace Cotizaciones.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Listado()
-        {
-            var model = _repo.ObtenerCotizaciones(187903394);
-            ViewData["Message"] = "Listado de cotizaciones por RUT de Cliente.";
-            return View(model);
-
-        }
     }
 }
