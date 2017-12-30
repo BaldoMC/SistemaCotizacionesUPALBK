@@ -24,6 +24,8 @@ namespace Cotizaciones.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("PersonaID");
+
                     b.Property<int>("costo");
 
                     b.Property<string>("descripcion");
@@ -41,6 +43,8 @@ namespace Cotizaciones.Migrations
                     b.Property<int>("total");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("PersonaID");
 
                     b.ToTable("Cotizaciones");
                 });
@@ -61,6 +65,14 @@ namespace Cotizaciones.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Personas");
+                });
+
+            modelBuilder.Entity("Cotizaciones.Models.Cotizacion", b =>
+                {
+                    b.HasOne("Cotizaciones.Models.Persona", "persona")
+                        .WithMany("cotizaciones")
+                        .HasForeignKey("PersonaID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

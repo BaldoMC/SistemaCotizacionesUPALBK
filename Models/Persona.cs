@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 /// <summary>
 /// Archivo donde se definen las clases del Dominio del problema.
@@ -23,6 +24,8 @@ namespace Cotizaciones.Models
 
         public string Paterno { get; set; }
 
-        public string Materno { get; set; }    
+        public string Materno { get; set; } 
+
+        public List<Cotizacion> cotizaciones {get; set;}
     }
 }

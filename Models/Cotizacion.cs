@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 /// <summary>
 /// Archivo donde se definen las clases del Dominio del problema.
@@ -24,6 +25,10 @@ namespace Cotizaciones.Models
         public int costo{get; set; }
         public int total {get; set; }
         public string estado{get; set; }
+
+        public int PersonaID {get;set; }
+        [ForeignKey("PersonaID")]
+        public Persona persona {get; set;}
 
     }
 }

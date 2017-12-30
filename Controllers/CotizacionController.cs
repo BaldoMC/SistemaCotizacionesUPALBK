@@ -22,7 +22,8 @@ namespace Cotizaciones.Controllers
         // GET: Cotizacion
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cotizaciones.ToListAsync());
+            var cotizacionesContext = _context.Cotizaciones.Include(c => c.persona);
+            return View(await cotizacionesContext.ToListAsync());
         }
 
         // GET: Cotizacion/Details/5
@@ -34,6 +35,7 @@ namespace Cotizaciones.Controllers
             }
 
             var cotizacion = await _context.Cotizaciones
+                .Include(c => c.persona)
                 .SingleOrDefaultAsync(m => m.ID == id);
             if (cotizacion == null)
             {
@@ -46,6 +48,7 @@ namespace Cotizaciones.Controllers
         // GET: Cotizacion/Create
         public IActionResult Create()
         {
+            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado")] Cotizacion cotizacion)
+        public async Task<IActionResult> Create([Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaID")] Cotizacion cotizacion)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace Cotizaciones.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
             return View(cotizacion);
         }
 
@@ -78,6 +82,7 @@ namespace Cotizaciones.Controllers
             {
                 return NotFound();
             }
+            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
             return View(cotizacion);
         }
 
@@ -86,7 +91,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado")] Cotizacion cotizacion)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaID")] Cotizacion cotizacion)
         {
             if (id != cotizacion.ID)
             {
@@ -113,6 +118,7 @@ namespace Cotizaciones.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
             return View(cotizacion);
         }
 
@@ -125,6 +131,7 @@ namespace Cotizaciones.Controllers
             }
 
             var cotizacion = await _context.Cotizaciones
+                .Include(c => c.persona)
                 .SingleOrDefaultAsync(m => m.ID == id);
             if (cotizacion == null)
             {

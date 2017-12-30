@@ -9,26 +9,6 @@ namespace Cotizaciones.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Cotizaciones",
-                columns: table => new
-                {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    costo = table.Column<int>(nullable: false),
-                    descripcion = table.Column<string>(nullable: true),
-                    estado = table.Column<string>(nullable: true),
-                    fechaCreacion = table.Column<DateTime>(nullable: false),
-                    fechaValidez = table.Column<DateTime>(nullable: false),
-                    nombreCliente = table.Column<string>(nullable: true),
-                    nombreProductor = table.Column<string>(nullable: true),
-                    total = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Cotizaciones", x => x.ID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Personas",
                 columns: table => new
                 {
@@ -43,6 +23,38 @@ namespace Cotizaciones.Migrations
                 {
                     table.PrimaryKey("PK_Personas", x => x.ID);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Cotizaciones",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PersonaID = table.Column<int>(nullable: false),
+                    costo = table.Column<int>(nullable: false),
+                    descripcion = table.Column<string>(nullable: true),
+                    estado = table.Column<string>(nullable: true),
+                    fechaCreacion = table.Column<DateTime>(nullable: false),
+                    fechaValidez = table.Column<DateTime>(nullable: false),
+                    nombreCliente = table.Column<string>(nullable: true),
+                    nombreProductor = table.Column<string>(nullable: true),
+                    total = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cotizaciones", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Cotizaciones_Personas_PersonaID",
+                        column: x => x.PersonaID,
+                        principalTable: "Personas",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cotizaciones_PersonaID",
+                table: "Cotizaciones",
+                column: "PersonaID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
