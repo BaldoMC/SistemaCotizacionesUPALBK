@@ -34,7 +34,7 @@ namespace Cotizaciones.Controllers
             }
 
             var persona = await _context.Personas
-                .SingleOrDefaultAsync(m => m.ID == id);
+                .SingleOrDefaultAsync(m => m.Rut == id);
             if (persona == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Rut,Nombre,Paterno,Materno")] Persona persona)
+        public async Task<IActionResult> Create([Bind("Rut,Nombre,Paterno,Materno")] Persona persona)
         {
             if (ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace Cotizaciones.Controllers
                 return NotFound();
             }
 
-            var persona = await _context.Personas.SingleOrDefaultAsync(m => m.ID == id);
+            var persona = await _context.Personas.SingleOrDefaultAsync(m => m.Rut == id);
             if (persona == null)
             {
                 return NotFound();
@@ -86,9 +86,9 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Rut,Nombre,Paterno,Materno")] Persona persona)
+        public async Task<IActionResult> Edit(int id, [Bind("Rut,Nombre,Paterno,Materno")] Persona persona)
         {
-            if (id != persona.ID)
+            if (id != persona.Rut)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace Cotizaciones.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PersonaExists(persona.ID))
+                    if (!PersonaExists(persona.Rut))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace Cotizaciones.Controllers
             }
 
             var persona = await _context.Personas
-                .SingleOrDefaultAsync(m => m.ID == id);
+                .SingleOrDefaultAsync(m => m.Rut == id);
             if (persona == null)
             {
                 return NotFound();
@@ -139,7 +139,7 @@ namespace Cotizaciones.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var persona = await _context.Personas.SingleOrDefaultAsync(m => m.ID == id);
+            var persona = await _context.Personas.SingleOrDefaultAsync(m => m.Rut == id);
             _context.Personas.Remove(persona);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -147,7 +147,7 @@ namespace Cotizaciones.Controllers
 
         private bool PersonaExists(int id)
         {
-            return _context.Personas.Any(e => e.ID == id);
+            return _context.Personas.Any(e => e.Rut == id);
         }
     }
 }

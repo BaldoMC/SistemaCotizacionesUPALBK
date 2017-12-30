@@ -12,16 +12,15 @@ namespace Cotizaciones.Migrations
                 name: "Personas",
                 columns: table => new
                 {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                    Rut = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", false),
                     Materno = table.Column<string>(nullable: true),
                     Nombre = table.Column<string>(nullable: true),
-                    Paterno = table.Column<string>(nullable: true),
-                    Rut = table.Column<string>(nullable: true)
+                    Paterno = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Personas", x => x.ID);
+                    table.PrimaryKey("PK_Personas", x => x.Rut);
                 });
 
             migrationBuilder.CreateTable(
@@ -30,7 +29,7 @@ namespace Cotizaciones.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    PersonaID = table.Column<int>(nullable: false),
+                    PersonaRut = table.Column<int>(nullable: false),
                     costo = table.Column<int>(nullable: false),
                     descripcion = table.Column<string>(nullable: true),
                     estado = table.Column<string>(nullable: true),
@@ -44,17 +43,17 @@ namespace Cotizaciones.Migrations
                 {
                     table.PrimaryKey("PK_Cotizaciones", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Cotizaciones_Personas_PersonaID",
-                        column: x => x.PersonaID,
+                        name: "FK_Cotizaciones_Personas_PersonaRut",
+                        column: x => x.PersonaRut,
                         principalTable: "Personas",
-                        principalColumn: "ID",
+                        principalColumn: "Rut",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cotizaciones_PersonaID",
+                name: "IX_Cotizaciones_PersonaRut",
                 table: "Cotizaciones",
-                column: "PersonaID");
+                column: "PersonaRut");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

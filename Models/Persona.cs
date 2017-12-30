@@ -16,9 +16,8 @@ namespace Cotizaciones.Models
     /// </remarks>
     public class Persona
     {
-        public int ID { get; set; }
 
-        public string Rut { get; set; }
+        public int Rut { get; set; }
 
         public string Nombre { get; set; }
 

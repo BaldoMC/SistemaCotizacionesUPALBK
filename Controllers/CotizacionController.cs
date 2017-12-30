@@ -48,7 +48,7 @@ namespace Cotizaciones.Controllers
         // GET: Cotizacion/Create
         public IActionResult Create()
         {
-            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID");
+            ViewData["PersonaRut"] = new SelectList(_context.Personas, "Rut", "Rut");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaID")] Cotizacion cotizacion)
+        public async Task<IActionResult> Create([Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaRut")] Cotizacion cotizacion)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace Cotizaciones.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
+            ViewData["PersonaRut"] = new SelectList(_context.Personas, "Rut", "Rut", cotizacion.PersonaRut);
             return View(cotizacion);
         }
 
@@ -82,7 +82,7 @@ namespace Cotizaciones.Controllers
             {
                 return NotFound();
             }
-            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
+            ViewData["PersonaRut"] = new SelectList(_context.Personas, "Rut", "Rut", cotizacion.PersonaRut);
             return View(cotizacion);
         }
 
@@ -91,7 +91,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaID")] Cotizacion cotizacion)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,nombreCliente,nombreProductor,fechaCreacion,fechaValidez,descripcion,costo,total,estado,PersonaRut")] Cotizacion cotizacion)
         {
             if (id != cotizacion.ID)
             {
@@ -118,7 +118,7 @@ namespace Cotizaciones.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PersonaID"] = new SelectList(_context.Personas, "ID", "ID", cotizacion.PersonaID);
+            ViewData["PersonaRut"] = new SelectList(_context.Personas, "Rut", "Rut", cotizacion.PersonaRut);
             return View(cotizacion);
         }
 

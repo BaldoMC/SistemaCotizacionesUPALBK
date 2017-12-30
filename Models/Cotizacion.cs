@@ -17,6 +17,7 @@ namespace Cotizaciones.Models
     public class Cotizacion
     {
         public int ID { get; set; }
+    
         public string nombreCliente{get ; set; }
         public string nombreProductor{get ; set; }
         public DateTime fechaCreacion {get; set; }
@@ -26,8 +27,8 @@ namespace Cotizaciones.Models
         public int total {get; set; }
         public string estado{get; set; }
 
-        public int PersonaID {get;set; }
-        [ForeignKey("PersonaID")]
+        public int PersonaRut {get;set; }
+        [ForeignKey("PersonaRut")]
         public Persona persona {get; set;}
 
     }
