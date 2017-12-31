@@ -3,10 +3,13 @@
     ViewData["Title"] = "Busqueda cotizaciones";
 }
 
-<h2>Busqueda de Cotizaciones</h2>
-<h3>@ViewData["Message"]Ingresar Rut</h3>
-    <input id="Text1" type="text" title="Ingresar rut" />
-    <input id="Button1" type="button" value="Buscar" title="Buscar cotizaciones"/>
+<h2>Busqueda de Cotizaciones</h2>    
+    <form id="form1" runat="server">
+                      Ingrese RUT:
+                      <input type="text" id="txtRut" name="Rut" value="" />
+                       
+                      <asp:Button Text="Submit" runat="server" OnClick="Submit" />
+                  </form>
 
 
 

@@ -16,14 +16,9 @@ namespace Cotizaciones.Controllers{
             repo = new CotizacionesRepository(context);
         }
         
-        public IActionResult Index()
-        {
-            var cotizaciones = repo.ObtenerCotizaciones(185075958);
+        public ActionResult Index(int rut){
+            var cotizaciones = repo.ObtenerCotizaciones(rut);
             return View(cotizaciones);
         }
-
-        
-        
-
     }
 }
