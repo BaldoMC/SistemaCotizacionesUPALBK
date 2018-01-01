@@ -11,7 +11,7 @@ using System;
 namespace Cotizaciones.Migrations
 {
     [DbContext(typeof(CotizacionesContext))]
-    [Migration("20171230171734_InitialCreate")]
+    [Migration("20180101005611_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace Cotizaciones.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("PersonaRut");
+                    b.Property<string>("PersonaRut");
 
                     b.Property<int>("costo");
 
@@ -52,7 +52,7 @@ namespace Cotizaciones.Migrations
 
             modelBuilder.Entity("Cotizaciones.Models.Persona", b =>
                 {
-                    b.Property<int>("Rut")
+                    b.Property<string>("Rut")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Materno");
@@ -70,8 +70,7 @@ namespace Cotizaciones.Migrations
                 {
                     b.HasOne("Cotizaciones.Models.Persona", "persona")
                         .WithMany("cotizaciones")
-                        .HasForeignKey("PersonaRut")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PersonaRut");
                 });
 #pragma warning restore 612, 618
         }

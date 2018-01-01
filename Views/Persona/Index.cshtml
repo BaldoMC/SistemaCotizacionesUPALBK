@@ -13,9 +13,6 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Rut)
-                </th>
-                <th>
                     @Html.DisplayNameFor(model => model.Nombre)
                 </th>
                 <th>
@@ -30,9 +27,6 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rut)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>

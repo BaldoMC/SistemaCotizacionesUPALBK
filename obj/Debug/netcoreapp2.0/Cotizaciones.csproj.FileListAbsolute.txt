@@ -28,3 +28,4 @@ c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.Assembl
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.AssemblyInfo.cs
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.dll
 c:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.pdb
+C:\GitHub\SistemaCotizacionesUPALBK\obj\Debug\netcoreapp2.0\Cotizaciones.csprojResolveAssemblyReference.cache

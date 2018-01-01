@@ -26,7 +26,7 @@ namespace Cotizaciones.Controllers
         }
 
         // GET: Persona/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -58,15 +58,18 @@ namespace Cotizaciones.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(persona);
+                if(Persona.validarRut(persona.Rut)){
+                    _context.Add(persona);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+                }
+                               
             }
             return View(persona);
         }
 
         // GET: Persona/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -86,7 +89,7 @@ namespace Cotizaciones.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Rut,Nombre,Paterno,Materno")] Persona persona)
+        public async Task<IActionResult> Edit(string id, [Bind("Rut,Nombre,Paterno,Materno")] Persona persona)
         {
             if (id != persona.Rut)
             {
@@ -117,7 +120,7 @@ namespace Cotizaciones.Controllers
         }
 
         // GET: Persona/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -137,7 +140,7 @@ namespace Cotizaciones.Controllers
         // POST: Persona/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var persona = await _context.Personas.SingleOrDefaultAsync(m => m.Rut == id);
             _context.Personas.Remove(persona);
@@ -145,7 +148,7 @@ namespace Cotizaciones.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PersonaExists(int id)
+        private bool PersonaExists(string id)
         {
             return _context.Personas.Any(e => e.Rut == id);
         }

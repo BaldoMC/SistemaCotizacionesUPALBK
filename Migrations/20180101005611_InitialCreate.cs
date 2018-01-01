@@ -12,8 +12,7 @@ namespace Cotizaciones.Migrations
                 name: "Personas",
                 columns: table => new
                 {
-                    Rut = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", false),
+                    Rut = table.Column<string>(nullable: false),
                     Materno = table.Column<string>(nullable: true),
                     Nombre = table.Column<string>(nullable: true),
                     Paterno = table.Column<string>(nullable: true)
@@ -29,7 +28,7 @@ namespace Cotizaciones.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    PersonaRut = table.Column<int>(nullable: false),
+                    PersonaRut = table.Column<string>(nullable: true),
                     costo = table.Column<int>(nullable: false),
                     descripcion = table.Column<string>(nullable: true),
                     estado = table.Column<string>(nullable: true),
@@ -47,7 +46,7 @@ namespace Cotizaciones.Migrations
                         column: x => x.PersonaRut,
                         principalTable: "Personas",
                         principalColumn: "Rut",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

@@ -19,7 +19,7 @@ namespace Cotizaciones.Services{
         public CotizacionesRepository(CotizacionesContext context){
             _context = context;
         }
-        public List<Cotizacion> ObtenerCotizaciones(int rutPer){
+        public List<Cotizacion> ObtenerCotizaciones(String rutPer){
             using (_context){
                 var cotizaciones = _context.Cotizaciones
                 .Where (b => b.PersonaRut==rutPer)

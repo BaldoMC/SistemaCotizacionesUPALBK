@@ -27,7 +27,7 @@ namespace Cotizaciones.Models
         public int total {get; set; }
         public string estado{get; set; }
 
-        public int PersonaRut {get;set; }
+        public String PersonaRut {get;set; }
         [ForeignKey("PersonaRut")]
         public Persona persona {get; set;}
 

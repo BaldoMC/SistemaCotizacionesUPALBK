@@ -13125,7 +13125,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hopt6\\.nuget\\packages\\": {},
+    "C:\\Users\\kevxa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13134,14 +13134,14 @@
       "projectUniqueName": "c:\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
       "projectName": "Cotizaciones",
       "projectPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
-      "packagesPath": "C:\\Users\\hopt6\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\kevxa\\.nuget\\packages\\",
       "outputPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hopt6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kevxa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
