@@ -13125,23 +13125,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kevxa\\.nuget\\packages\\": {},
+    "C:\\Users\\bmora\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+      "projectUniqueName": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
       "projectName": "Cotizaciones",
-      "projectPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
-      "packagesPath": "C:\\Users\\kevxa\\.nuget\\packages\\",
-      "outputPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\obj\\",
+      "projectPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\Cotizaciones.csproj",
+      "packagesPath": "C:\\Users\\bmora\\.nuget\\packages\\",
+      "outputPath": "c:\\GitHub\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\SistemaCotizacionesUPALBK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kevxa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bmora\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
