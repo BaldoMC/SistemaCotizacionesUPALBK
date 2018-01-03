@@ -1,0 +1,16 @@
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.csproj.CoreCompileInputs.cache
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.AssemblyInfoInputs.cache
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.AssemblyInfo.cs
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.deps.json
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.runtimeconfig.json
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.runtimeconfig.dev.json
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.pdb
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\Cotizaciones.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\bin\Debug\netcoreapp2.0\Cotizaciones.pdb
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.dll
+C:\GitHub\SistemaCotizacionesUPALBK.Tests\obj\Debug\netcoreapp2.0\SistemaCotizacionesUPALBK.Tests.pdb

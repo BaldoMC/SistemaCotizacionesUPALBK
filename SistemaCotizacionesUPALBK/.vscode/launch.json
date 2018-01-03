@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/SistemaCotizacionesUPALBK/bin/Debug/netcoreapp2.0/Cotizaciones.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.0/Cotizaciones.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/SistemaCotizacionesUPALBK",
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
